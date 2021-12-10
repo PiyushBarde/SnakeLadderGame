@@ -1,7 +1,9 @@
 public class SnakeLadderGame {
     public static void main(String[] args) {
-    int pos1 = 0;
-     while (pos1 < 100 ){
+        int counter1 = 0;
+ 			int pos1 = 0;
+        while (pos1 < 100 ) {
+            counter1 = counter1 + 1;
             double dice1 = (Math.floor(Math.random() * 10) % 6) + 1;
             System.out.println((int) dice1);
             double cond1 = Math.floor(Math.random() * 10) % 3;
@@ -50,5 +52,6 @@ public class SnakeLadderGame {
                 }
             }
         }
+		System.out.println("The dice was played : " + counter1 + " times");
     }
 }
